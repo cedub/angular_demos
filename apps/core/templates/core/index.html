@@ -7,7 +7,7 @@
     </script>
 </head>
 <body>
-    <div ng-include="js/app/partials/header.html"></div>
+    <div ng-include="'{{ STATIC_URL }}core/js/app/partials/header.html'"></div>
     <div ng-view></div>
     <script src="{{ STATIC_URL }}core/js/vendor/angular.js"></script>
     <script src="{{ STATIC_URL }}core/js/vendor/angular-route.js"></script>
