@@ -1,0 +1,17 @@
+<html ng-app="firstApp">
+<head>
+    <script type="text/javascript">
+    var GLOBAL = {
+        'STATIC_URL': '{{ STATIC_URL }}'
+    };
+    </script>
+</head>
+<body>
+    <div ng-include="js/app/partials/header.html"></div>
+    <div ng-view></div>
+    <script src="{{ STATIC_URL }}core/js/vendor/angular.js"></script>
+    <script src="{{ STATIC_URL }}core/js/vendor/angular-route.js"></script>
+    <script src="{{ STATIC_URL }}core/js/app/controllers/controllers.js"></script>
+    <script src="{{ STATIC_URL }}core/js/app/app.js"></script>
+</body>
+</html>
