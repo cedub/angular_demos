@@ -2,6 +2,9 @@ import os
 
 from settings.common import *
 
+# Import Any Apps that have static content using non-standard static directories
+from apps import core
+
 
 # Django settings for motiv8_django project in development.
 
@@ -22,3 +25,7 @@ DATABASES = {
 }
 
 DATABASES['default']['NAME'] = '{0}_{1}'.format(DATABASES['default']['NAME'], os.environ["LOGNAME"])
+
+STATICFILES_DIRS = (
+    '{0}/static_build/'.format(core.__path__[0]),
+)

@@ -1,6 +1,7 @@
 from settings.common import *
 
-# Django settings for motiv8_django project in development.
+from apps import core
+
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
@@ -18,3 +19,7 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default.
     }
 }
+
+STATICFILES_DIRS = (
+    '{0}/static_bin/'.format(core.__path__[0]),
+)
