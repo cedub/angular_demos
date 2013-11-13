@@ -29,3 +29,7 @@ DATABASES['default']['NAME'] = '{0}_{1}'.format(DATABASES['default']['NAME'], os
 STATICFILES_DIRS = (
     '{0}/static_build/'.format(core.__path__[0]),
 )
+
+TEMPLATE_DIRS = (
+    '{0}/static_build/'.format(core.__path__[0]),
+)

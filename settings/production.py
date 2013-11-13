@@ -23,3 +23,7 @@ DATABASES = {
 STATICFILES_DIRS = (
     '{0}/static_bin/'.format(core.__path__[0]),
 )
+
+TEMPLATE_DIRS = (
+    '{0}/static_bin/'.format(core.__path__[0]),
+)
