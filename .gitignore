@@ -1,1 +1,6 @@
-*.pyc
+*.sw*
+*~
+node_modules/
+vendor/
+build/
+bin/
