@@ -434,9 +434,10 @@ module.exports = function ( grunt ) {
        * plugin should auto-detect.
        */
       options: {
-        livereload: true
+        livereload: {
+          port: grunt.option('lrport') || 35729
+        }
       },
-
       /**
        * When the Gruntfile changes, we just want to lint it. In fact, when
        * your Gruntfile changes, it will automatically be reloaded!
