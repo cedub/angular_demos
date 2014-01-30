@@ -7,6 +7,6 @@
     "angular-ui-router": "~0.2.0",
     "angular-ui-utils": "~0.0.4",
     "lodash": "2.4.1",
-    "angular-models": "git://github.com/cedub/angular-models.git#0.1"
+    "angular-rest-models": "git://github.com/cedub/angular-models.git#0.3.0"
   }
 }
